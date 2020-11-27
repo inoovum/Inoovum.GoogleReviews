@@ -1,0 +1,69 @@
+prototype(Inoovum.GoogleReviews:Component.Review) < prototype(Neos.Neos:ContentComponent) {
+    reviews = Inoovum.GoogleReviews:Class.Review {
+        placeID = ${node.properties.placeID}
+    }
+    renderer = afx`
+        <Inoovum.GoogleReviews:Component.AbstractContent>
+            <div class="card-columns">
+
+                <Neos.Fusion:Loop items={props.reviews} itemName="review" >
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div class="row align-items-center">
+
+                                <div class="col-sm-7">
+
+                                    <div class="author">
+
+                                        <div class="row align-items-center">
+                                            <div class="col-2 p-0">
+                                                <img src={review.profile_photo_url} width="100%" />
+                                            </div>
+                                            <div class="col-10 pl-2">
+                                                <span>{review.author_name}</span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-5 pr-0 text-right">
+
+                                    <div class="rating">
+
+                                            <Neos.Fusion:Loop items={review.rating} itemName="star">
+
+                                                <i class="fas fa-star"></i>
+
+                                            </Neos.Fusion:Loop>
+
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-body">
+                                                
+                            <div class="text">
+
+                                {review.text}
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </Neos.Fusion:Loop>
+
+            </div>
+        </Inoovum.GoogleReviews:Component.AbstractContent>
+    `
+}

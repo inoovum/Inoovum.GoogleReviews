@@ -1,0 +1,7 @@
+prototype(Inoovum.GoogleReviews:Component.AbstractContent) < prototype(Neos.Fusion:Component) {
+    renderer = afx`
+        <div class="inoovum-google-reviews">
+            {props.content}
+        </div>
+    `
+}

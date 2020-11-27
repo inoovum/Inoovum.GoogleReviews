@@ -1,0 +1,14 @@
+Neos:
+  Neos:
+    nodeTypes:
+      groups:
+        inoovum_googlereviews:
+          position: 'end'
+          label: 'Google Reviews'
+    fusion:
+      autoInclude:
+        Inoovum.GoogleReviews: true
+Inoovum:
+  GoogleReviews:
+    apiKey: 'setAPIinyourownsettingsfile'
+    lang: 'de'

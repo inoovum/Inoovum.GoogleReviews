@@ -1,0 +1,21 @@
+'Inoovum.GoogleReviews:Component.Review':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: 'Google Reviews'
+    group: 'inoovum_googlereviews'
+    icon: 'fab fa-star'
+    inspector:
+      groups:
+        inoovum_googlereviews:
+          label: 'Google Reviews'
+          icon: 'fab fa-star'
+  properties:
+    placeID:
+      type: string
+      ui:
+        label: 'Google Place ID'
+        showInCreationDialog: true
+        reloadIfChanged: true
+        inspector:
+          group: 'inoovum_googlereviews'

@@ -1,0 +1,18 @@
+{
+    "description": "Place a Google Review Plugin in your NEOS Installation",
+    "type": "neos-package",
+    "name": "inoovum/googlereviews",
+    "require": {
+        "neos/neos": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Inoovum\\GoogleReviews\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Inoovum.GoogleReviews"
+        }
+    }
+}

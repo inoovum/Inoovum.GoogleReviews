@@ -1,0 +1,4 @@
+prototype(Inoovum.GoogleReviews:Class.Review) {
+    @class = 'Inoovum\\GoogleReviews\\Fusion\\ReviewFusion'
+    placeID = false
+}
